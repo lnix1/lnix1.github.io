@@ -6,7 +6,12 @@ module.exports = {
     title: `lnix.github.io`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-postcss", "gatsby-plugin-image", "gatsby-plugin-sitemap", "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
+  plugins: ["gatsby-plugin-postcss", 
+            "gatsby-plugin-image",
+            "gatsby-plugin-sitemap",
+            "gatsby-plugin-mdx",
+            "gatsby-plugin-sharp",
+            "gatsby-transformer-sharp", {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",
