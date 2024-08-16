@@ -10,6 +10,7 @@ export function Headshot() {
       layout="fixed"
       height={200}
       width={200}
+      class="rounded-full"
     />
   )
 }
