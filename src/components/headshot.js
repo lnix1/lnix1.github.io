@@ -6,10 +6,9 @@ export function Headshot() {
     <StaticImage
       src="../images/headshot.png"
       alt="Personal Headshot"
-      placeholder="blurred"
       layout="fixed"
-      height={200}
-      width={200}
+      height={250}
+      width={250}
       class="rounded-full"
     />
   )

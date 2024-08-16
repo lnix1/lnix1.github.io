@@ -1,44 +1,41 @@
-import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
-import styled from 'styled-components'
+import * as React from "react"
+import { StaticImage } from "gatsby-plugin-image"
 
-import BackgroundImage from 'gatsby-background-image'
-
-const BackgroundSection = ({ className }) => {
-  const data = useStaticQuery(
-    graphql`
-      query {
-        desktop: file(relativePath: { eq: "astronomy.jpg" }) {
-          childImageSharp {
-            fluid(quality: 90, maxWidth: 1920) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-          }
-        }
-      }
-    `
-  )
-
-  // Set ImageData.
-  const imageData = data.desktop.childImageSharp.fluid
-
+export function bg({ children }) {
   return (
-    <BackgroundImage
-      Tag="section"
-      className={className}
-      fluid={imageData}
-      backgroundColor={`#040e18`}
-    >
-      <h2>gatsby-background-image</h2>
-    </BackgroundImage>
+    <div style={{ display: "grid" }}>
+      {/* You can use a GatsbyImage component if the image is dynamic */}
+      <StaticImage
+        style={{
+          gridArea: "1/1",
+          // You can set a maximum height for the image, if you wish.
+          // maxHeight: 600,
+        }}
+        layout="fullWidth"
+        // You can optionally force an aspect ratio for the generated image
+        //aspectRatio={2 / 1}
+        // This is a presentational image, so the alt should be an empty string
+        alt=""
+        // Silverthorne Milky Way by Nathan Anderson, via Unsplash
+        src={
+          "../images/astronomy1.jpg"
+        }
+        formats={["auto", "webp", "avif"]}
+      />
+      <div
+        style={{
+          // By using the same grid area for both, they are stacked on top of each other
+          gridArea: "1/1",
+          position: "relative",
+          // This centers the other elements inside the hero component
+          placeItems: "center",
+          display: "grid",
+        }}
+      >
+        {children}
+      </div>
+    </div>
   )
 }
 
-const StyledBackgroundSection = styled(BackgroundSection)`
-  width: 100%;
-  background-position: bottom center;
-  background-repeat: repeat-y;
-  background-size: cover;
-`
-
-export default StyledBackgroundSection
+export default bg
