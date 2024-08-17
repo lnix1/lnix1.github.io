@@ -1,9 +1,9 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
-export function BackgroundSection({ children }) {
+export function BlurredBg({ children }) {
   return (
-    <div class="animate-fade" style={{ display: "grid" }}>
+    <div style={{ display: "grid" }}>
       {/* You can use a GatsbyImage component if the image is dynamic */}
       <StaticImage
         style={{
@@ -18,10 +18,10 @@ export function BackgroundSection({ children }) {
         alt=""
         // Silverthorne Milky Way by Nathan Anderson, via Unsplash
         src={
-          //"../images/astronomy1.jpg"
-          "https://images.unsplash.com/photo-1472712739516-7ad2b786e1f7"
+          "../images/astronomy1.jpg"
         }
         formats={["auto", "webp", "avif", "jpg"]}
+        placeholder="blurred"
       />
       <div
         style={{
@@ -39,4 +39,4 @@ export function BackgroundSection({ children }) {
   )
 }
 
-export default BackgroundSection
+export default BlurredBg

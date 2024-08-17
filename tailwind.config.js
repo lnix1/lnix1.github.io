@@ -5,7 +5,22 @@ module.exports = {
     `./src/components/**/*.{js,jsx,ts,tsx}`,
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        frankRuhle: ["'Frank Ruhl Libre', serif"]
+      },
+
+      animation: {
+				fade: 'fadeIn 1s ease-in-out',
+			},
+
+			keyframes: {
+				fadeIn: {
+					from: { opacity: .25 },
+					to: { opacity: 1 },
+				},
+			},
+    },
   },
   plugins: [],
 }

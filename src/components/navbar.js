@@ -3,14 +3,18 @@ import { StaticImage } from "gatsby-plugin-image"
 
 export function Navbar() {
   return (
-    <StaticImage
-      src="../images/navbar-logo.png"
-      alt="Navbar Image"
-      placeholder="blurred"
-      layout="fixed"
-      height={40}
-      width={60}
-    />
+    <a href="/">
+      <div class="invert">
+        <StaticImage
+          src="../images/home.png"
+          alt="Navbar Image"
+          placeholder="blurred"
+          layout="fixed"
+          height={60}
+          width={60}
+        />
+      </div>
+    </a>
   )
 }
 
