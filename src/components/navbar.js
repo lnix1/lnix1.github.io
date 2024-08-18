@@ -5,9 +5,8 @@ import MyPDF from '../images/Resume_Nix_L.pdf';
 
 export function Navbar() {
   return (
-    <nav class="flex items-center justify-between mb-40">
-        <a href="/">
-          <div class="invert">
+    <nav class="flex items-center gap-10 justify-center mb-20">
+        <a class="invert" href="/">
             <StaticImage
               src="../images/home.png"
               alt="Navbar Image"
@@ -16,7 +15,6 @@ export function Navbar() {
               height={40}
               width={40}
             />
-          </div>
         </a>
         <a href="https://github.com/lnix1">
           <StaticImage

@@ -20,6 +20,10 @@ module.exports = {
 					to: { opacity: 1 },
 				},
 			},
+
+      backgroundImage: {
+        'parallax': 'url(../images/astronomy1.jpg)'
+      },
     },
   },
   plugins: [],

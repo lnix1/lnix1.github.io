@@ -1,16 +1,14 @@
 import * as React from 'react'
 import Headshot from '../components/headshot'
 import Navbar from '../components/navbar'
-import BackgroundSection from '../components/bg'
 import { StaticImage } from "gatsby-plugin-image"
 
 const IndexPage = () => {
   return (
-    <BackgroundSection>
 
       <body className="font-frankRuhle">
 
-        <section class="py-10 md:py-16">
+        <section class="py-10 md:py-16 bg-fixed bg-contain bg-parallax bg-center">
 
             <div class="container min-h-screen mx-auto px-4">
 
@@ -33,52 +31,45 @@ const IndexPage = () => {
 
                 <div class="text-center py-10">
 
-                    <div class="grid grid-cols-3 gap-4 justify-items-center">
-                      <div class="flex items-center">
+                    <div class="flex items-center gap-10 justify-center">
+                      <div class="grid-cols-1">
                         <a href="/" class="invert">
                           <StaticImage
                             //Credits to Freepik, via flaticon.com
                             src="../images/resume_2.png"
                             alt=""
-                            layout="fixed"
                             height={60}
                             width={60}
                           />
                         </a>
-                      </div>
-                      <a href="/" class="invert">
-                        <StaticImage
-                          //Credits to Freepik, via flaticon.com
-                          src="../images/project.png"
-                          alt=""
-                          layout="fixed"
-                          height={60}
-                          width={60}
-                        />
-                      </a>
-                      <a href="/" class="invert">
-                        <StaticImage
-                          //Credits to BomSymbols, via flaticon.com
-                          src="../images/blogger.png"
-                          alt=""
-                          layout="fixed"
-                          height={60}
-                          width={60}
-                        />
-                      </a>
-                    </div>
-
-                    <div class="grid grid-cols-3 gap-4 justify-items-center">
-                      <div>
                         <h1 class="text-gray-200 md:text-2xl">Experience</h1>
                       </div>
-                      <div>
+                      <div class="grid-cols-1">
+                        <a href="/" class="invert">
+                          <StaticImage
+                            //Credits to Freepik, via flaticon.com
+                            src="../images/project.png"
+                            alt=""
+                            height={60}
+                            width={60}
+                          />
+                        </a>
                         <h1 class="text-gray-200 md:text-2xl">Projects</h1>
                       </div>
-                      <div>
+                      <div class="grid-cols-1">
+                        <a href="/" class="invert">
+                          <StaticImage
+                            //Credits to afitrose, via flaticon.com
+                            src="../images/blogger.png"
+                            alt=""
+                            height={60}
+                            width={60}
+                          />
+                        </a>
                         <h1 class="text-gray-200 md:text-2xl">Blog</h1>
                       </div>
                     </div>
+
                 </div>
 
                 <div class="text-center py-10">
@@ -97,7 +88,6 @@ const IndexPage = () => {
 
     </body>
 
-  </BackgroundSection>
   )
 }
 
