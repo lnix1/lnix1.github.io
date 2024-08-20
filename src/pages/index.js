@@ -32,6 +32,7 @@ const IndexPage = () => {
                 <div class="text-center py-10">
 
                     <div class="flex items-center gap-10 justify-center">
+                      {/* Commenting out the Experience icon. 
                       <div class="grid-cols-1">
                         <a href="/" class="invert">
                           <StaticImage
@@ -44,6 +45,7 @@ const IndexPage = () => {
                         </a>
                         <h1 class="text-gray-200 md:text-2xl">Experience</h1>
                       </div>
+                      */}
                       <div class="grid-cols-1">
                         <a href="/" class="invert">
                           <StaticImage

@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { StaticImage } from "gatsby-plugin-image"
-import FileSaver from 'file-saver';
 import MyPDF from '../images/Resume_Nix_L.pdf'; 
 
 export function Navbar() {
