@@ -23,15 +23,17 @@ const IndexPage = () => {
 
                       <h1 class="text-gray-200 text-lg md:text-6xl mb-8 opacity-100">Louis Nix II</h1>
 
-                      <h1 class="text-gray-200 text-4xl md:text-4xl leading-none mb-8">Full Stack Developer & Data Analyst</h1>
+                      <h1 class="text-gray-200 text-4xl md:text-4xl leading-none mb-8">Data Engineer & Data Analyst</h1>
+
+                      <p class="text-gray-300 text-md md:text-md leading-none mb-8">I specialize in data, filling the gap between <br />engineering and non-technical stakeholders.</p>
 
                     </div>
 
                 </div>
 
                 <div class="text-center py-10">
-
                     <div class="flex items-center gap-10 justify-center">
+                    {/*
                       <div class="grid-cols-1">
                         <a href="/" class="invert">
                           <StaticImage
@@ -44,6 +46,7 @@ const IndexPage = () => {
                         </a>
                         <h1 class="text-gray-200 md:text-2xl">Experience</h1>
                       </div>
+                      */}
                       <div class="grid-cols-1">
                         <a href="/portfolio" class="invert">
                           <StaticImage
@@ -57,7 +60,7 @@ const IndexPage = () => {
                         <h1 class="text-gray-200 md:text-2xl">Portfolio</h1>
                       </div>
                       <div class="grid-cols-1">
-                        <a href="/" class="invert">
+                        <a href="/blog" class="invert">
                           <StaticImage
                             //Credits to afitrose, via flaticon.com
                             src="../images/blogger.png"
@@ -71,7 +74,7 @@ const IndexPage = () => {
                     </div>
 
                 </div>
-
+                {/*
                 <div class="text-center py-10">
 
 
@@ -82,6 +85,8 @@ const IndexPage = () => {
                     </div>
 
                 </div>
+                */}
+
             </div>
 
         </section>
